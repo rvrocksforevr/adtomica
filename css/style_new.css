@@ -1261,4 +1261,11 @@ body {
     bottom: 8vh;
 }
 
+.how_section .what_description, 
+.how_section .initiate_section .initiate_description, 
+.initiate_section .how_section .initiate_description
+{
+    padding:15px;
+}
+
 }
