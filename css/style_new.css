@@ -665,24 +665,29 @@ body {
   margin:auto;
   text-decoration: none;
 }
-.fp-left li a span.tooltip_data
-{
+.fp-left li a span.tooltip_data {
     position: absolute;
     top: 0px;
     left: 7vh;
-      font-family: ubunturegular;
+    font-family: ubunturegular;
     font-size: 2.7vh;
     color: #000000;
     display: block;
+    font-weight: 100;
     text-decoration: none;
-    transition: ease-in 0.4s;
-    
+    transition: font-weight ease-in-out 2s;
 }
+.fp-left li a:hover span.tooltip_data
+{
+    font-weight: 900;
+    transition: font-weight ease-in-out 2s;
 
+}
 
 .fp-left li a.active span.tooltip_data
 {
-    font-family: ubuntubold;
+    font-weight: 900;
+    transition: font-weight ease-in-out 2s;
 }
 .fp-left li .fp-tooltip.left
 {
