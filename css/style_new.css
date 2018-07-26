@@ -664,8 +664,9 @@ body {
   height:5vh;
   margin:auto;
   text-decoration: none;
-  font-weight: 100;
-  transition: font-weight ease-in-out 0.3s;
+    transform: scale(1);
+
+  transition: transform ease-in-out 0.5s;
 }
 .fp-left li a:hover
 {
@@ -673,11 +674,10 @@ body {
   width:100%;
   height:5vh;
   margin:auto;
-  font-weight: 900;
   text-decoration: none;
-    transform: scale(1.1);
+  transform: scale(1.15);
   
-  transition: font-weight ease-in-out 0.3s;
+  transition: transform ease-in-out 0.5s;
 }
 .fp-left li a span.tooltip_data {
     position: absolute;
@@ -693,8 +693,7 @@ body {
 }
 .fp-left li a.active
 {
-    font-weight: 900;
-    transform: scale(1.1);
+    transform: scale(1.15);
     transition: font-weight ease-in-out 0.5s;
 }
 .fp-left li a.active span
