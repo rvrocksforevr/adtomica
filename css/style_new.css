@@ -675,6 +675,8 @@ body {
   margin:auto;
   font-weight: 900;
   text-decoration: none;
+    transform: scale(1.1);
+  
   transition: font-weight ease-in-out 0.3s;
 }
 .fp-left li a span.tooltip_data {
@@ -692,6 +694,13 @@ body {
 .fp-left li a.active
 {
     font-weight: 900;
+    transform: scale(1.1);
+    transition: font-weight ease-in-out 0.5s;
+}
+.fp-left li a.active span
+{
+    font-weight: 900;
+    transform: scale(1.1);
     transition: font-weight ease-in-out 0.5s;
 }
 .fp-left li .fp-tooltip.left
