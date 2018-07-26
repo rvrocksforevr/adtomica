@@ -568,33 +568,31 @@ body {
         height: 80px;
     }
     .country.sing{
-        font-family: ubunturegular;
-        color: #000;
-        font-size: 24px;
-        text-decoration: none;
-        display: block;
-        margin-bottom: 10px;
-        position: absolute;
-        left: 6%;
-        bottom: 50px;
-        clear: both;
-        width: 100%;
-        text-align: left;
-    }
+    font-family: ubunturegular;
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    left: 64%;
+    bottom: 50px;
+    width: 100%;
+    text-align: left;    }
     .country.ind{
-        font-family: ubunturegular;
-        color: #313131;
-        font-size: 24px;
-        text-decoration: none;
-        display: block;
-        margin-bottom: 0px;
-        position: absolute;
-        left: 6%;
-        bottom: 30px;
-        font-weight: 400;
-        clear: both;
-        width: 100%;
-        text-align: left;
+            font-family: ubunturegular;
+    color: #313131;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 64%;
+    bottom: 30px;
+    font-weight: 400;
+    clear: both;
+    width: 100%;
+    text-align: left;
     }
 
     .blog_menu{
@@ -751,9 +749,9 @@ body {
         left: 0;
         top: 80px;
         right: 0;
-        height:100vh;
+        height:calc(100vh - 80px);
         text-align: center;
-        padding: 40px 0 0 0;
+        padding: 20vh 0 0 0;
         width: 100%;
         transform: translate3d(0,100vh,0);
         transition: all ease-in 0.5s;
@@ -908,8 +906,8 @@ body {
     display: block;
 }
 .country_box{
-    position: relative;
-    bottom: -30vh;
+    position: absolute;
+    bottom: 0vh;
 }
 .country_box img{
     position: absolute;
@@ -1085,14 +1083,14 @@ body {
   height: 60%;
   width: 60%;
   transform: rotate(45deg);
-  top: -13px;
+  top: -7px;
 }
 #menu-toggle #cross span:nth-child(1) {
     height: 0%;
     width: 2px;
     position: absolute;
-    top: 22%;
-    left: 55px;
+    top: 32%;
+    left: 48px;
     transition-delay: 0s;
 }
 #menu-toggle #cross span:nth-child(2) {
@@ -1116,12 +1114,17 @@ body {
   transition-delay: 0.25s;
 }
 #menu-toggle.open #cross span:nth-child(1) {
-  height: 80%;
+  height: 60%;
   transition-delay: 0.625s;
 }
 #menu-toggle.open #cross span:nth-child(2) {
-  width: 80%;
+  width: 60%;
   transition-delay: 0.375s;
+}
+
+#myNavbar
+{
+    padding-top:20vh;
 }
 
 @media(max-width:767px)
@@ -1188,12 +1191,30 @@ body {
 {
     top:-5px;
 }
-#myNavbar
-{
-    padding-top:15px;
-}
+
 .footer_icon_list ul a
 {
     font-size:18px;
 }
+#menu-toggle.open #cross span:nth-child(1) {
+    height: 80%;
+    transition-delay: 0.625s;
+}
+#menu-toggle.open #cross span:nth-child(2) {
+    width: 80%;
+    transition-delay: 0.375s;
+}
+
+#myNavbar {
+    background: #fff;
+    padding-top: 20vh !important;
+    height: calc(100vh - 65px) !important;
+}
+
+.menu_open #fp-nav,
+.menu_open .left_sidebar_section
+{
+    z-index:0;
+}
+
 }
