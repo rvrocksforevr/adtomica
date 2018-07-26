@@ -1253,4 +1253,12 @@ body {
     width: 100%;
     text-align: left;
 }
+
+.country_box {
+    position: fixed;
+    bottom: 0vh;
+    height: 92px;
+    bottom: 8vh;
+}
+
 }
